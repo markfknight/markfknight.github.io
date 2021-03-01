@@ -1,0 +1,200 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Blog Post snapshot renders correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="container max-w-3xl px4 py10"
+      >
+        <header
+          class="py-10"
+        >
+          <h3>
+            <a
+              href="/"
+            />
+          </h3>
+        </header>
+        <main>
+          <article
+            class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto"
+          >
+            <header>
+              <h1 />
+              <p
+                class="text-gray-500"
+              />
+            </header>
+            <section
+              class="text-justify"
+            />
+            <footer />
+          </article>
+          <nav>
+            <ul
+              style="display: flex; flex-wrap: wrap; justify-content: space-between; list-style: none; padding: 0px;"
+            >
+              <li>
+                <a
+                  href=""
+                  rel="prev"
+                  style="box-shadow: none; text-decoration: none;"
+                >
+                  ← 
+                  
+                </a>
+              </li>
+              <li>
+                <a
+                  href=""
+                  rel="next"
+                  style="box-shadow: none; text-decoration: none;"
+                >
+                  
+                   →
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </main>
+        <footer
+          class="py-10 text-center"
+        >
+          © 
+          2021
+          , Built with
+           
+          <a
+            href="https://www.gatsbyjs.org"
+          >
+            Gatsby
+          </a>
+        </footer>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="container max-w-3xl px4 py10"
+    >
+      <header
+        class="py-10"
+      >
+        <h3>
+          <a
+            href="/"
+          />
+        </h3>
+      </header>
+      <main>
+        <article
+          class="prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto"
+        >
+          <header>
+            <h1 />
+            <p
+              class="text-gray-500"
+            />
+          </header>
+          <section
+            class="text-justify"
+          />
+          <footer />
+        </article>
+        <nav>
+          <ul
+            style="display: flex; flex-wrap: wrap; justify-content: space-between; list-style: none; padding: 0px;"
+          >
+            <li>
+              <a
+                href=""
+                rel="prev"
+                style="box-shadow: none; text-decoration: none;"
+              >
+                ← 
+                
+              </a>
+            </li>
+            <li>
+              <a
+                href=""
+                rel="next"
+                style="box-shadow: none; text-decoration: none;"
+              >
+                
+                 →
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </main>
+      <footer
+        class="py-10 text-center"
+      >
+        © 
+        2021
+        , Built with
+         
+        <a
+          href="https://www.gatsbyjs.org"
+        >
+          Gatsby
+        </a>
+      </footer>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
