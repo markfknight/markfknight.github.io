@@ -1,9 +1,10 @@
 {
-  "name": "gatsby-blog-typescript-jest-tailwind",
+  "name": "markfknight.dev",
   "private": true,
-  "description": "Starter site for a simple Gatsby blog with TypeScript",
-  "version": "1.0.0",
+  "description": "The personal site for Mark Knight (markfknight)",
+  "version": "2.0.0",
   "license": "MIT",
+  "homepage": "https://markfknight.dev",
   "keywords": [
     "gatsby"
   ],
@@ -77,9 +78,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/markfknight/gatsby-blog-typescript-jest-tailwind"
+    "url": "https://github.com/markfknight/markfknight.github.io"
   },
   "bugs": {
-    "url": "https://github.com/markfknight/gatsby-blog-typescript-jest-tailwind/issues"
+    "url": "https://github.com/markfknight/markfknight.github.io/issues"
   }
 }

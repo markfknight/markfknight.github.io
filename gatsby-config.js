@@ -7,24 +7,28 @@
 module.exports = {
   /* Your site config here */
   // [GitHub Pages](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/how-gatsby-works-with-github-pages/)
-  pathPrefix: `/gatsby-blog-typescript-jest-tailwind`,
+  // pathPrefix: `/gatsby-blog-typescript-jest-tailwind`,
   siteMetadata: {
-    title: `Gatsby Blog Starter`,
-    description: `Gatsby Blog TypeScript with esLint, prettier, Jest and Tailwind`,
+    title: `Electric Sheep`,
     author: `markfknight`,
+    description: `Do Androids dream of electric sheep?`,
+    siteUrl: `https://markfknight.dev/`,
+    social: {
+      twitter: `markfknight`,
+    },
   },
   plugins: [
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Blog Starter`,
-        short_name: `Blog`,
+        name: `Do Androids dream of electric sheep?`,
+        short_name: `Eletric Sheep`,
         start_url: `/`,
-        background_color: `#2cbdff`,
-        theme_color: `#2cbdff`,
+        background_color: `#ffffff`,
+        theme_color: `#663399`,
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
-        display: `standalone`,
+        display: `minimal-ui`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
@@ -85,13 +89,14 @@ module.exports = {
       },
     },
     // add your brave token and domain to enable [Brave Rewards](https://publishers.basicattentiontoken.org/)
-    // {
-    //   resolve: 'gatsby-plugin-verify-brave',
-    //   options: {
-    //     token: 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890',
-    //     domain: 'test.dev',
-    //   },
-    // },
+    {
+      resolve: 'gatsby-plugin-verify-brave',
+      options: {
+        token:
+          'fb8627615739081c29044d9499f5c20cc122f31b3577ad47f336fcfc3796571c',
+        domain: 'markfknight.dev',
+      },
+    },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,

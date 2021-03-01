@@ -18,7 +18,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
     Use the Gatsby CLI to create a new site, specifying the hello-world starter.
 
-    ```shell
+    ```sh
     # create a new Gatsby site using the gatsby blog starter
     gatsby new my-gatsby-blog https://github.com/markfnight/gatsby-blog-typescript-jest-tailwind
     ```
@@ -27,7 +27,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
     Navigate into your new site’s directory and start it up.
 
-    ```shell
+    ```sh
     cd my-gatsby-blog/
     gatsby develop
     ```
