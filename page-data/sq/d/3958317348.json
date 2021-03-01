@@ -1,0 +1,15 @@
+{
+    "data": {
+        "allMarkdownRemark": {
+            "totalCount": 1,
+            "edges": [
+                {
+                    "node": {
+                        "id": "4786f752-4633-5bc2-9c94-fe32a3f6d8ff",
+                        "frontmatter": { "title": "Test POst" }
+                    }
+                }
+            ]
+        }
+    }
+}
