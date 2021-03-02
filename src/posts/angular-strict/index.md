@@ -2,6 +2,8 @@
 title: Angular strict mode
 date: '2020-02-09'
 description: 'What is strict mode and how to turn it on'
+redirect_from:
+  - /angular-strict/
 ---
 
 # Strict Angular

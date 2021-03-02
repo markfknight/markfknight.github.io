@@ -2,6 +2,8 @@
 title: Android Studio Logcat Colours
 date: '2014-07-07'
 description: 'Set your Android Studio logcat colours here!'
+redirect_from:
+  - /android-studio-logcat-colours/
 ---
 
 A tip that was passed on to me via Google+ from [+MatoušSkála](https://plus.google.com/u/0/+MatoušSkála)

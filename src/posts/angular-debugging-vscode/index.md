@@ -2,6 +2,8 @@
 title: Debugging Angular in VS Code
 date: '2017-02-17'
 description: 'Getting Visual Studio Code setup for debugging an Angular CLI project.'
+redirect_from:
+  - /angular-debugging-vscode/
 ---
 
 With the VS Code Extension **Debugger for Chrome** this should be a quick setup for

@@ -2,6 +2,8 @@
 title: Editor Monospaced Fonts
 date: '2020-01-26'
 description: 'Preferences for editor fonts including the fantastic new JetBrains Mono.'
+redirect_from:
+  - /editor-monospaced-fonts/
 ---
 
 # Monospaced Fonts

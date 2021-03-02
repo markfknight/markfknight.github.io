@@ -2,6 +2,8 @@
 title: Haskell with Visual Studio Code
 date: '2020-01-20'
 description: 'Getting Visual Studio Code setup for hacking on Haskell.'
+redirect_from:
+  - /haskell-setup-windows-vs-code/
 ---
 
 ## Installing Haskell

@@ -2,6 +2,8 @@
 title: Angular Development in Docker - Part 1
 date: '2020-06-24'
 description: 'Getting a good docker development environment'
+redirect_from:
+  - /angular-in-docker/
 ---
 
 # Angular Development in Docker
