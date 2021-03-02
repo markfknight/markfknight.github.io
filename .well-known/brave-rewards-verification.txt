@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: markfknight.dev
+Token: fb8627615739081c29044d9499f5c20cc122f31b3577ad47f336fcfc3796571c
