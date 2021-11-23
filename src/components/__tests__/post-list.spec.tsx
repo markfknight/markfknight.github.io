@@ -1,4 +1,7 @@
-import React, { PropsWithChildren } from 'react';
+/**
+ * @jest-environment jsdom
+ */
+
 import { cleanup, render } from '@testing-library/react';
 
 import { PostListProps, PostListData, PurePostList } from '../post-list';
@@ -7,7 +10,7 @@ afterEach(cleanup);
 
 describe(`Post List snapshot`, () => {
   it(`renders correctly`, () => {
-    const props: PropsWithChildren<PostListProps & { data: PostListData }> = {
+    const props: PostListProps & { data: PostListData } = {
       data: {
         allMarkdownRemark: {
           totalCount: 1,
@@ -30,7 +33,7 @@ describe(`Post List snapshot`, () => {
       },
     };
 
-    const tree = render(<PurePostList {...props} />);
-    expect(tree).toMatchSnapshot();
+    const { container } = render(<PurePostList {...props} />);
+    expect(container).toMatchSnapshot();
   });
 });

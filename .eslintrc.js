@@ -23,9 +23,9 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
+    'plugin:react/jsx-runtime',
     'plugin:jsx-a11y/recommended',
     'plugin:jest/recommended',
-    'plugin:testing-library/recommended',
     'plugin:testing-library/react',
     'plugin:@typescript-eslint/recommended',
     'prettier',

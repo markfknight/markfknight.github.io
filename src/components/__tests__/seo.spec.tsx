@@ -1,4 +1,7 @@
-import React from 'react';
+/**
+ * @jest-environment jsdom
+ */
+
 import { cleanup, render } from '@testing-library/react';
 import { Helmet } from 'react-helmet';
 
@@ -18,9 +21,9 @@ describe(`SEO snapshot`, () => {
       },
     };
 
-    const wrapper = render(<PureSEO title="Test" data={data} />);
+    const { unmount } = render(<PureSEO title="Test" data={data} />);
     const helmet = Helmet.peek();
     expect(helmet.title).toEqual(`Test | Your Title`);
-    wrapper.unmount();
+    unmount();
   });
 });

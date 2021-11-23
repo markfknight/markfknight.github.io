@@ -1,5 +1,4 @@
 import { graphql, PageProps, Link } from 'gatsby';
-import React from 'react';
 import Layout from '../components/layout';
 import { SEO } from '../components/seo';
 
@@ -30,7 +29,7 @@ export type BlogPostData = {
   markdownRemark: MarkdownRemark;
 };
 
-const BlogPost: React.FC<BlogPostProps> = (props) => {
+const BlogPost = (props: BlogPostProps) => {
   const data = props.data;
   const post = data.markdownRemark;
   const siteMetadata = data.site.siteMetadata;

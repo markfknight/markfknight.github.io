@@ -6,7 +6,7 @@
     "lib": ["dom", "es2020"],
     // "allowJs": true,
     // "checkJs": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "strict": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,

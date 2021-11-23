@@ -1,4 +1,3 @@
-import React from 'react';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
@@ -25,7 +24,7 @@ type Data = {
   };
 };
 
-export const PureSEO: React.FC<SeoProps & { data: Data }> = (props) => {
+export const PureSEO = (props: SeoProps & { data: Data }) => {
   const metaDescription =
     props.description || props.data.site.siteMetadata.description;
   const lang = props.lang || `en`;

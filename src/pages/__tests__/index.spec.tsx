@@ -1,4 +1,7 @@
-import React from 'react';
+/**
+ * @jest-environment jsdom
+ */
+
 import { cleanup, render } from '@testing-library/react';
 
 import Home, { Data } from '../index';
@@ -22,8 +25,8 @@ describe(`Index snapshot`, () => {
       },
     } as PageProps<Data>;
 
-    const tree = render(<Home {...props} />);
+    const { container } = render(<Home {...props} />);
 
-    expect(tree).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 });

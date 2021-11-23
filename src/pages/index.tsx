@@ -1,5 +1,4 @@
 import { graphql, PageProps } from 'gatsby';
-import React from 'react';
 import Layout from '../components/layout';
 import { PostList } from '../components/post-list';
 import { SEO } from '../components/seo';
@@ -12,7 +11,7 @@ export type Data = {
   };
 };
 
-const Home: React.FC<PageProps<Data>> = (props) => {
+const Home = (props: PageProps<Data>) => {
   const { data } = props;
   const title = data.site.siteMetadata.title;
 

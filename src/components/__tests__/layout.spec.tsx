@@ -1,4 +1,7 @@
-import React, { PropsWithChildren } from 'react';
+/**
+ * @jest-environment jsdom
+ */
+
 import { cleanup, render } from '@testing-library/react';
 
 import Layout, { LayoutProps } from '../layout';
@@ -12,14 +15,14 @@ describe(`Layout snapshot`, () => {
       location: {
         pathname: `/`,
       },
-    } as PropsWithChildren<LayoutProps>;
+    } as LayoutProps;
 
-    const tree = render(
+    const { container } = render(
       <Layout {...props}>
         <p>Test</p>
       </Layout>
     );
-    expect(tree).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 
   it(`renders correctly when not root pathname`, () => {
@@ -28,13 +31,13 @@ describe(`Layout snapshot`, () => {
       location: {
         pathname: ``,
       },
-    } as PropsWithChildren<LayoutProps>;
+    } as LayoutProps;
 
-    const tree = render(
+    const { container } = render(
       <Layout {...props}>
         <p>Test</p>
       </Layout>
     );
-    expect(tree).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 });

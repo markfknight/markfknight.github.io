@@ -1,5 +1,5 @@
 import { graphql, Link, useStaticQuery } from 'gatsby';
-import React from 'react';
+import { ReactNode } from 'react';
 
 export type PostListData = {
   allMarkdownRemark: {
@@ -24,11 +24,10 @@ export type PostListData = {
 
 export type PostListProps = {
   title?: string;
+  children?: ReactNode;
 };
 
-export const PurePostList: React.FC<PostListProps & { data: PostListData }> = (
-  props
-) => (
+export const PurePostList = (props: PostListProps & { data: PostListData }) => (
   <>
     <div className="space-y-8">
       {props.data.allMarkdownRemark.edges.map(({ node }) => (
@@ -51,7 +50,7 @@ export const PurePostList: React.FC<PostListProps & { data: PostListData }> = (
   </>
 );
 
-export const PostList: React.FC<PostListProps> = (props) => {
+export const PostList = (props: PostListProps) => {
   const data: PostListData = useStaticQuery(
     graphql`
       query {

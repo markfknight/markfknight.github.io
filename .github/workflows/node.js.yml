@@ -5,43 +5,42 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [16.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-    - name: Cache
-      uses: actions/cache@v2.1.4
-      with:
-        # A directory to store and save the cache
-        path: ~/.npm
-        # An explicit key for restoring and saving the cache
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
+      - name: Cache
+        uses: actions/cache@v2.1.4
+        with:
+          # A directory to store and save the cache
+          path: ~/.npm
+          # An explicit key for restoring and saving the cache
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
             ${{ runner.os }}-node-
 
-    - name: Build and Test (Node.js ${{ matrix.node-version }})
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
-    - if: ${{ github.event_name == 'push' }}
-      name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@4.0.0
-      with:
-        branch: gh-pages # The branch the action should deploy to.
-        folder: public # The folder the action should deploy.
+      - name: Build and Test (Node.js ${{ matrix.node-version }})
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npm test
+      - run: npm run build --if-present
+      - if: ${{ github.event_name == 'push' }}
+        name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.0.0
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: public # The folder the action should deploy.

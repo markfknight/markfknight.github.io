@@ -1,4 +1,7 @@
-import React, { PropsWithChildren } from 'react';
+/**
+ * @jest-environment jsdom
+ */
+
 import { render } from '@testing-library/react';
 
 import BlogPost, { BlogPostProps } from '../blog-post';
@@ -7,7 +10,7 @@ jest.mock(`../../components/seo`);
 
 describe(`Blog Post snapshot`, () => {
   it(`renders correctly`, () => {
-    const props: PropsWithChildren<BlogPostProps> = {
+    const props: BlogPostProps = {
       location: {
         pathname: ``,
       },
@@ -56,8 +59,8 @@ describe(`Blog Post snapshot`, () => {
           },
         },
       },
-    } as PropsWithChildren<BlogPostProps>;
-    const tree = render(<BlogPost {...props} />);
-    expect(tree).toMatchSnapshot();
+    } as BlogPostProps;
+    const { container } = render(<BlogPost {...props} />);
+    expect(container).toMatchSnapshot();
   });
 });

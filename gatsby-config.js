@@ -17,6 +17,7 @@ module.exports = {
       twitter: `markfknight`,
     },
   },
+  jsxRuntime: 'automatic',
   plugins: [
     {
       resolve: `gatsby-plugin-manifest`,

@@ -1,4 +1,7 @@
-import React from 'react';
+/**
+ * @jest-environment jsdom
+ */
+
 import { cleanup, render } from '@testing-library/react';
 
 import NotFoundPage, { Data } from '../404';
@@ -21,8 +24,8 @@ describe(`404 snapshot`, () => {
       },
     } as PageProps<Data>;
 
-    const tree = render(<NotFoundPage {...props} />);
+    const { container } = render(<NotFoundPage {...props} />);
 
-    expect(tree).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 });
