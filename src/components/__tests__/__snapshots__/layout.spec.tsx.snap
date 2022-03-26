@@ -25,7 +25,7 @@ exports[`Layout snapshot renders correctly when not root pathname 1`] = `
       class="py-10 text-center"
     >
       © 
-      2021
+      2022
       , Built with
        
       <a
@@ -63,7 +63,7 @@ exports[`Layout snapshot renders correctly when root pathname 1`] = `
       class="py-10 text-center"
     >
       © 
-      2021
+      2022
       , Built with
        
       <a
