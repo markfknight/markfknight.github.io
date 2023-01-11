@@ -42,7 +42,7 @@
     "gatsby-remark-smartypants": "^5.2.0",
     "gatsby-remark-vscode": "^3.2.1",
     "gatsby-source-filesystem": "^4.2.0",
-    "gatsby-transformer-remark": "^5.2.0",
+    "gatsby-transformer-remark": "^5.25.1",
     "katex": "^0.13.3",
     "monokai-operator-theme": "github:markfknight/monokai-operator",
     "react": "^17.0.2",
